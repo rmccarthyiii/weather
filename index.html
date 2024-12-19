@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Weather App</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<div class="card">
+
+	<div class="search">
+		<input class="input" type="text" placeholder="Enter City Name">
+		<button class="btn"><i class="material-icons">search</i></button>
+		<select name="units" id="units" class="unit">
+			<option value="imperial">F</option>
+			<option value="metric">C</option>
+		</select>
+	</div>
+	<div class="error">
+		<p>Invalid City Name</p>
+	</div>
+
+	<div class="weather">
+		<img src="images/clouds.png" class="weather-icon">
+		<p class="desc">Clear</p>
+		<h1 class="temp">78°F</h1>
+		<h2 class="city">Austin</h2>
+		<div class="details">
+			<div class="col">
+				<img src="images/wind.png" alt="wind-icon">
+				<div>
+					<p class="wind">15mi/h</p>
+					<p>Wind Speed</p>
+				</div>
+			</div>
+
+			<div class="col">
+				<img src="images/humidity.png" alt="humidity-icon">
+				<div>
+					<p class="humidity">50%</p>
+					<p>Humidity</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
